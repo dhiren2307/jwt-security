@@ -20,5 +20,5 @@ jobs:
         run: echo "Workspace name - ${{ github.workspace }}"
       - name: List files in the repository
         run: |
-          ll ${{ github.workspace }}
+          ls -a ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}.
