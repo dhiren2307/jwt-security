@@ -22,4 +22,3 @@ jobs:
         run: |
           ls -a ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: docker --help
