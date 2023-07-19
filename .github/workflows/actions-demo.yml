@@ -23,7 +23,5 @@ jobs:
           ls -a ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Run script
-        run: |
-          echo "Running script.sh ..."
-          chmod +x ../../script.sh
-          ../../script.sh
+        run: chmod +x ../../script.sh
+      - run: ../../script.sh
